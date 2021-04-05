@@ -2,7 +2,7 @@ FROM buildpack-deps:stable-scm
 
 RUN set -ex ;\
     apt-get update ;\
-    apt-get install -y g++ make;\
+    apt-get install -y g++ make pv;\
     git clone https://github.com/jinfeihan57/p7zip.git ;\
     cd p7zip ;\
     make -j3 7z 7za 7zr sfx ;\
