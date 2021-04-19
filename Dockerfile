@@ -1,4 +1,4 @@
-FROM buildpack-deps:stable-scm
+FROM dsmn/postgis-enhanced:latest
 
 RUN set -ex ;\
     apt-get update ;\
